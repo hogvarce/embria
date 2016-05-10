@@ -1,0 +1,10 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.gallery-main {
+    max-height: 600px;
+}
+
+.gallery-list img {
+    max-height: 128px;
+}

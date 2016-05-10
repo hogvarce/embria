@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Embria</title>
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/bower_components/angular-material/angular-material.min.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body ng-cloak layout="row" layout-wrap ng-controller="mainController">
+    <md-content layout="column" flex layout-align="center center">
+        <h1 flex>Хотите с ней встретиться?</h1>
+        <div layout="row" layout-xs="column" flex>
+            <md-button ng-click="next()">
+                Пропустить
+            </md-button>
+            <md-button ng-click="no()">
+                Нет
+            </md-button>
+            <md-button ng-click="yes()">
+                Да
+            </md-button>
+        </div>
+        <div class="gallery" layout-wrap>
+            <h2 class="text-center">{{user.name}}</h2>
+            <img src="{{mainPhoto}}" alt="{{user.name}}" class="gallery-main center-block" />
+            <ul class="list-inline gallery-list" layout="row" layout-wrap>
+                <li ng-repeat="photo in user.photos">
+                    <img src="{{photo.size128}}" alt="{{user.name}}" ng-click="setImage(photo)" />
+                </li>
+            </ul>
+        </div>
+    </md-content>
+    <script src="/bower_components/angular/angular.js"></script>
+    <script src="/bower_components/angular-animate/angular-animate.min.js" charset="utf-8"></script>
+    <script src="/bower_components/angular-aria/angular-aria.min.js" charset="utf-8"></script>
+    <script src="/bower_components/angular-material/angular-material.min.js" charset="utf-8"></script>
+    <script src="/bower_components/jquery/dist/jquery.min.js" charset="utf-8"></script>
+    <script src="/bower_components/fancybox/source/jquery.fancybox.pack.js" charset="utf-8"></script>
+    <script src="/assets/js/controllers.js"></script>
+</body>
+</html>

@@ -1,1 +1,0 @@
-define(["jquery"],function(n){n(function(){console.log("hello!")}())});

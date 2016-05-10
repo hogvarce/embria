@@ -1,1 +1,0 @@
-function greeter(e){return"Привет, "+e.firstname+" "+e.lastname}var user={firstname:"Jane",lastname:"User"},div=document.createElement("div"),txt=document.createTextNode(greeter(user));div.appendChild(txt),document.body.appendChild(div);

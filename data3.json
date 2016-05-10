@@ -1,0 +1,10 @@
+{
+"age":27,
+"cityName":"Санкт-Петербург",
+"cryptedId":"1",
+"gender":"w",
+"name":"Пользователь-3",
+"photos":[
+        {"size128":"http:\/\/193.0.171.21\/04\/97\/12\/1468217940\/1567900423_square_small.jpg?hash=k_gOKNa8zKWuZK6YXheZUw&expires=64060578000&updated=1450772100", "size48":"https:\/\/i03.fotocdn.net\/s10\/179\/gallery_t\/381\/2467658930.jpg?20160113195847", "sizeBox":"http:\/\/193.0.171.21\/04\/97\/12\/1468217940\/1567900423_huge.jpg?hash=FlRpBybc_DsuUyJ-NS2Z-w&expires=64060578000&updated=1450772100"}
+    ]
+}
